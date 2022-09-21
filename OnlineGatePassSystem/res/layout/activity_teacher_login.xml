@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/user"
+    tools:context=".TeacherLoginActivity" >
+
+    <EditText
+        android:id="@+id/tusername"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/roundedit"
+        android:ems="10"
+        android:textColorHint="#000000"
+        android:hint="Enter  Your Username"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/tregister"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tlogin"
+        android:layout_below="@+id/tlogin"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/roundbutton"
+        android:textSize="25dp"
+        android:text="Register" />
+
+    <EditText
+        android:id="@+id/tpassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/tusername"
+        android:layout_below="@+id/tusername"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/roundedit"
+        android:ems="10"
+        android:textColorHint="#000000"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/tlogin"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tpassword"
+        android:layout_below="@+id/tpassword"
+        android:layout_marginTop="48dp"
+          android:textSize="25dp"
+        android:background="@drawable/roundbutton"
+        android:text="Login" />
+
+</RelativeLayout>

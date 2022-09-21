@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.onlinegatepasssystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gate"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.onlinegatepasssystem.ParentLoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.ParentRegistrationActivity"
+            android:label="@string/title_activity_parent_registration" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.HodLoginActivity"
+            android:label="@string/title_activity_hod_login" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.HodRegistrationActivity"
+            android:label="@string/title_activity_hod_registration" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.TeacherLoginActivity"
+            android:label="@string/title_activity_teacher_login" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.TeacherRegistrationActivity"
+            android:label="@string/title_activity_teacher_registration" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.SecurityLoginActivity"
+            android:label="@string/title_activity_security_login" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.SecurityRegistrationActivity"
+            android:label="@string/title_activity_security_registration" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.GatepassDashboardActivity"
+            android:label="@string/title_activity_gatepass_dashboard" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.StudentLoginActivity"
+            android:label="@string/title_activity_student_login" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.StudentRegistrationActivity"
+            android:label="@string/title_activity_student_registration" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.AddapplicationActivity"
+            android:label="@string/title_activity_addapplication" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.ViewapplicationActivity"
+            android:label="@string/title_activity_viewapplication" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.ViewstatusActivity"
+            android:label="@string/title_activity_viewstatus" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.TechperActivity"
+            android:label="@string/title_activity_techper" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.MychildActivity"
+            android:label="@string/title_activity_mychild" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.Stud_dashboard"
+            android:label="@string/title_activity_stud_dashboard" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.StudentStatusActivity"
+            android:label="@string/title_activity_student_status" >
+        </activity>
+        <activity
+            android:name="com.example.onlinegatepasssystem.Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+    </application>
+
+</manifest>
